@@ -12,7 +12,7 @@
         pkgs = import nixpkgs { inherit system; };
       in
       rec {
-        packages.default = pkgs.callPackage ./default.nix { };
+        packages.default = pkgs.haskellPackages.callPackage ./default.nix { };
         devShells.default = pkgs.mkShell { inputsFrom = [ packages.default.env ]; };
         formatter = pkgs.nixpkgs-fmt;
       }
