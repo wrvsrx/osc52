@@ -13,7 +13,7 @@
       in
       rec {
         packages.default = pkgs.haskellPackages.callPackage ./default.nix { };
-        devShells.default = pkgs.mkShell { inputsFrom = [ packages.default.env ]; };
+        devShells.default = pkgs.mkShell { inputsFrom = [ packages.default.env ]; nativeBuildInputs = [ pkgs.haskell-language-server ]; };
         formatter = pkgs.nixpkgs-fmt;
       }
     );
