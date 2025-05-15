@@ -2,7 +2,7 @@
   description = "hello world";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:wrvsrx/nixpkgs/patched-nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
 

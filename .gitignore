@@ -23,4 +23,5 @@ cabal.project.local~
 .ghc.environment.*
 
 # nix build result
-result
+/result
+/.direnv/
